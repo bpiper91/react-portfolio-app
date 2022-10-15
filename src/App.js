@@ -1,6 +1,8 @@
 import React from 'react';
-import Footer from './components/Footer';
+
 import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
         {/* <About />
         <Portfolio /> */}
         <Contact />
-        {/* <Resume /> */}
+        <Resume />
       </main>
       <Footer />
     </div>
