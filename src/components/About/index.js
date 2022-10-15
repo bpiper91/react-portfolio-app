@@ -4,6 +4,7 @@ import Brett from '../../assets';
 function About() {
     return (
         <section>
+            <h2>About Me</h2>
             <img id="avatar" src={Brett} />
             <div id="bio">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 

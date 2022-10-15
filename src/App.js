@@ -1,20 +1,30 @@
 import React from 'react';
-// import Header from './components/Header';
-import About from './components/About';
+import Header from './components/Header';
 // import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import About from './components/About';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  const [navSelection, setNavSelection] = useState('Portfolio');
+
   return (
     <div>
-      <Header />
+      <Header 
+        navSelection={navSelection}
+        setNavSelection={setNavSelection}
+      />
       <main>
-        <About />
         {/* <Portfolio /> */}
-        <Contact />
+        <About />
         <Resume />
+        <Contact />
+
+        {/* {navSelection === Portfolio && <Portfolio />}
+        {navSelection === About && <About />}
+        {navSelection === Resume && <Resume />}
+        {navSelection === Contact && <Contact />} */}
       </main>
       <Footer />
     </div>
