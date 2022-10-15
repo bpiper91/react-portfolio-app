@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react';
 
 function Header(props) {
+    // destructure props for clarity
     const {
         navSelection,
-        setNavSelection,
+        setNavSelection
     } = props;
 
+    // testing to make sure navSelection gets updated on navbar clicks
+    console.log('header code:' + navSelection)
+
+    // update page title in browser tab when page changes
     useEffect(() => {
         document.title = `${navSelection} | Brett Piper`;
     });
@@ -20,16 +25,16 @@ function Header(props) {
             </p>
             <nav>
                 <ul className="flex-row">
-                    <li className={navSelection === 'Portfolio' && 'navActive'}>
-                        <a href="#about" onClick={() => setNavSelection('Portfolio')}>Portfolio</a>
+                    <li className={`nav-item ${navSelection === 'Portfolio' && 'navActive'}`}>
+                        <a href="#portfolio" onClick={() => setNavSelection('Portfolio')}>Portfolio</a>
                     </li>
-                    <li className={navSelection === 'About' && 'navActive'}>
+                    <li className={`nav-item ${navSelection === 'About' && 'navActive'}`}>
                         <a href="#about" onClick={() => setNavSelection('About')}>About Me</a>
                     </li>
-                    <li className={navSelection === 'Resume' && 'navActive'}>
-                        <a href="#about" onClick={() => setNavSelection('Resume')}>Resume</a>
+                    <li className={`nav-item ${navSelection === 'Resume' && 'navActive'}`}>
+                        <a href="#resume" onClick={() => setNavSelection('Resume')}>Resume</a>
                     </li>
-                    <li className={navSelection === 'Contact' && 'navActive'}>
+                    <li className={`nav-item ${navSelection === 'Contact' && 'navActive'}`}>
                         <a href="#contact" onClick={() => setNavSelection('Contact')}>Contact</a>
                     </li>
                 </ul>
