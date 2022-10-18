@@ -20,10 +20,14 @@ function App() {
         setNavSelection={setNavSelection}
       />
       <main>
-        {navSelection === Portfolio && <Portfolio />}
-        {navSelection === About && <About />}
-        {navSelection === Resume && <Resume />}
-        {navSelection === Contact && <Contact />}
+        {navSelection === "Portfolio" && <Portfolio />}
+        {navSelection === "About" && <About />}
+        {navSelection === "Resume" && <Resume />}
+        {navSelection === "Contact" && <Contact />}
+        {/* <Portfolio />
+        <About />
+        <Resume />
+        <Contact /> */}
       </main>
       <Footer />
     </div>

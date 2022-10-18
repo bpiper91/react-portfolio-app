@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Header(props) {
     // destructure props for clarity
@@ -28,13 +28,13 @@ function Header(props) {
                     <li className={`nav-item ${navSelection === 'Portfolio' && 'navActive'}`}>
                         <a href="#portfolio" onClick={() => setNavSelection('Portfolio')}>Portfolio</a>
                     </li>
-                    <li className={`nav-item ${navSelection === 'About' && 'navActive'}`}>
+                    <li key="about" className={`nav-item ${navSelection === 'About' && 'navActive'}`}>
                         <a href="#about" onClick={() => setNavSelection('About')}>About Me</a>
                     </li>
-                    <li className={`nav-item ${navSelection === 'Resume' && 'navActive'}`}>
+                    <li key="resume" className={`nav-item ${navSelection === 'Resume' && 'navActive'}`}>
                         <a href="#resume" onClick={() => setNavSelection('Resume')}>Resume</a>
                     </li>
-                    <li className={`nav-item ${navSelection === 'Contact' && 'navActive'}`}>
+                    <li key="contact" className={`nav-item ${navSelection === 'Contact' && 'navActive'}`}>
                         <a href="#contact" onClick={() => setNavSelection('Contact')}>Contact</a>
                     </li>
                 </ul>

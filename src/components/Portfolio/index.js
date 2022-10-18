@@ -24,7 +24,7 @@ function Portfolio() {
             </h2>
             <div id="project-list" className="flex-row">
                 {projects.map((project, i) => (
-                    <div id={`project-${i}`}> 
+                    <div id={`project-${i}`} key={`${i}`}> 
                         <h3>{project.title}</h3>
                         <img src={project.image} alt={project.title} />
                         <p>
