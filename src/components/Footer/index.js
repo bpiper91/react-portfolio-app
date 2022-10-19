@@ -10,7 +10,7 @@ function Footer() {
                 <a href="https://www.linkedin.com/in/brett-piper-53b70830/">LinkedIn</a>
             </li>
             <li>
-                <a href="#">Third Platform</a>
+                <a href="https://mobile.twitter.com/repiptterb">Twitter</a>
             </li>
         </footer>
     );

@@ -54,7 +54,7 @@ function Contact() {
                     <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
                 <div>
-                    <label htmlFor="message">Message:</label>
+                    <label className='text-area-label' htmlFor="message">Message:</label>
                     <textarea name="message" rows="6" defaultValue={message} onBlur={handleChange} />
                 </div>
                 {/* may handle error message display a different way

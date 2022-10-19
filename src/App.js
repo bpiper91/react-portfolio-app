@@ -14,7 +14,7 @@ function App() {
   console.log('app code: ' + navSelection);
 
   return (
-    <div>
+    <div className='container'>
       <Header 
         navSelection={navSelection}
         setNavSelection={setNavSelection}

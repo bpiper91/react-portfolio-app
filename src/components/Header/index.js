@@ -16,13 +16,15 @@ function Header(props) {
     });
 
     return (
-        <header>
-            <h2>
-                <a href="/">Brett Piper</a>
-            </h2>
-            <p>
-                A portfolio using React.js
-            </p>
+        <header className="flex-row">
+            <div className="header-title">
+                <h1>
+                    <a href="/">Brett Piper</a>
+                </h1>
+                <p>
+                    A portfolio using React.js
+                </p>
+            </div>
             <nav>
                 <ul className="flex-row">
                     <li className={`nav-item ${navSelection === 'Portfolio' && 'navActive'}`}>

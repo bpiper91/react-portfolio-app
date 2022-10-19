@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #066974;
+}
+
+/* HEADER & FOOTER STYLING */
+header, footer {
+    background-color: #003440;
+
+}
+
+header a, footer a {
+    color: #2ebbca;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    color: #00e5ff;
+}
+
+.header-title {
+    padding: 30px 20px;
+    min-width: 200px;
+}
+
+header h1 {
+    padding-bottom: 3px;
+}
+
+header h1 a {
+    color: #f06400;
+}
+
+header h1 a:hover, .navActive a:hover {
+    color: #ff9659;
+}
+
+nav li, footer li {
+    font-size: larger;
+    list-style: none;
+    padding: 24px 20px;
+    font-weight: bold;
+}
+
+.navActive a {
+    color: #f06400;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN SECTION STYLING */
+main {
+    margin: 0 12.5%;
+    padding: 30px 0;
+}
+
+main p a {
+    color: #ff7214;
+    text-decoration: none;
+}
+
+main p a:hover {
+    color: #f06400;
+    text-decoration: underline;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+#avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+#bio {
+    height: 100%;
+}
+
+h3 {
+    padding-bottom: 16px;
+    font-size: larger;
+}
+
+.project-list {
+    justify-content: space-between;
+}
+
+.proj {
+    padding: 20px 40px;
+    flex-grow: 1;
+    margin: 20px 30px;
+    background-color: #02535e;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.proj a {
+    color: #f06400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.proj a:hover {
+    color: #ff9659;
+}
+
+.proj-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+main p {
+    padding-top: 8px;
+}
+
+#contact-form div {
+    padding-bottom: 20px;
+}
+
+#contact-form label {
+    padding-bottom: 6px;
+    display: block;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 400px;
+}
+
+#contact-form button {
+    background-color: #f06400;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-color: #e05f02;
+    font-weight: bold;
+}
+
+#proficiencies {
+    padding-top: 30px;
+}
+
+.proficiencies {
+    margin-left: 40px;
+}
+
+/* setting the page to expand to fill viewport */
+header, footer {
+    flex-grow: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

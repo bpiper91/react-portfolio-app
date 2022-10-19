@@ -1,4 +1,5 @@
 import React from 'react';
+import ResumePDF from '../../assets/pdf/resume.pdf';
 
 function Resume() {
 
@@ -7,16 +8,19 @@ function Resume() {
             <h2>
                 Resume
             </h2>
-            <h4>
+            <h3>
                 View/Download Resume
-            </h4>
+            </h3>
             <p>
-                <a href="#">Please click here to view or download my resume as a PDF.</a>
+                Please click the link below to view or download my resume as a PDF.
+                </p>
+            <p>
+                <a href={ResumePDF}>Pre-Bootcamp Resume</a> (a resume including my web development experience will come soon)
             </p>
-            <h4>
+            <h3 id="proficiencies">
                 Proficiencies
-            </h4>
-            <ul>
+            </h3>
+            <ul className='proficiencies'>
                 <li>
                     HTML
                 </li>
