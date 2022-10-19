@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+# React Portfolio
+
+## Description
+
+This portfolio is a single-page application built using React.js. Please see the deployed page for a brief About page, links to examples of my work, a resume download, and a contact form.
+
+## Contact
+
+Brett Piper
+
+[GitHub](https://github.com/bpiper91) | [Email](mailto:bpiper91@gmail.com)
