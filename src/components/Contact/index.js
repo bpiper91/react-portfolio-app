@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail, capitalizeFirstLetter } from '../../utils/helpers';
 
 function Contact() {
     // set form input states to empty strings and destructure object for clarity in form
@@ -8,6 +8,9 @@ function Contact() {
 
     // set error message default state to empty string
     const [errorMessage, setErrorMessage] = useState('');
+    
+    // set success message default state to empty string
+    const [successMessage, setSuccessMessage] = useState('');
 
     function handleChange(e) {
         if (e.target.name === 'email') {
@@ -23,7 +26,7 @@ function Contact() {
         } else {
             // if the name or message input changed, check length and set error message if 0
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
+                setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
             } else {
                 setErrorMessage('');
             };
@@ -38,12 +41,24 @@ function Contact() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
+
         // add logic for taking messages
+
+        // // clear form after submission
+        // setFormState({ ...formState, name: '', email: '', message: '' });
+        // add feedback message
+        setSuccessMessage('Form submitted. Thanks for your message!');
+        // remove feedback message after 10 seconds
+        setTimeout(() => {
+            setSuccessMessage('');
+        }, 10000)
+
     }
 
     return (
         <section>
             <h2>Contact Me</h2>
+            <p>Note: Form is not yet fully functional</p>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -57,13 +72,17 @@ function Contact() {
                     <label className='text-area-label' htmlFor="message">Message:</label>
                     <textarea name="message" rows="6" defaultValue={message} onBlur={handleChange} />
                 </div>
-                {/* may handle error message display a different way
-                {errorMessage && (
-                    <div>
-                        <p className="error-message">{errorMessage}</p>
-                    </div>
-                )} */}
                 <button type="submit">Submit</button>
+                {errorMessage && (
+                    <div className='no-b'>
+                        <span className="error-message">{errorMessage}</span>
+                    </div>
+                )}
+                {successMessage && (
+                    <div>
+                        <span className="success-message">{successMessage}</span>
+                    </div>
+                )}
             </form>
         </section>
     )

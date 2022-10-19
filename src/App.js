@@ -10,9 +10,6 @@ function App() {
   // set default state of nav selection to About and track changes
   const [navSelection, setNavSelection] = useState('About');
 
-  // testing to make sure navSelection changes on navbar click
-  console.log('app code: ' + navSelection);
-
   return (
     <div className='container'>
       <Header 
@@ -24,10 +21,6 @@ function App() {
         {navSelection === "About" && <About />}
         {navSelection === "Resume" && <Resume />}
         {navSelection === "Contact" && <Contact />}
-        {/* <Portfolio />
-        <About />
-        <Resume />
-        <Contact /> */}
       </main>
       <Footer />
     </div>

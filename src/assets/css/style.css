@@ -141,6 +141,10 @@ main p {
     padding-bottom: 20px;
 }
 
+#contact-form:not(:first-child) {
+    padding-top: 20px;
+}
+
 #contact-form label {
     padding-bottom: 6px;
     display: block;
@@ -157,6 +161,7 @@ main p {
     border-radius: 8px;
     border-color: #e05f02;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #proficiencies {
@@ -165,6 +170,19 @@ main p {
 
 .proficiencies {
     margin-left: 40px;
+}
+
+.error-message, .success-message {
+    background-color: #02535e;
+    color: #f06400;
+    padding: 6px 12px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.success-message {
+    background-color: #e05f02;
+    color: #fff;
 }
 
 /* setting the page to expand to fill viewport */

@@ -7,9 +7,6 @@ function Header(props) {
         setNavSelection
     } = props;
 
-    // testing to make sure navSelection gets updated on navbar clicks
-    console.log('header code:' + navSelection)
-
     // update page title in browser tab when page changes
     useEffect(() => {
         document.title = `${navSelection} | Brett Piper`;
