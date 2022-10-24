@@ -16,7 +16,7 @@ function Header(props) {
         <header className="flex-row">
             <div className="header-title">
                 <h1>
-                    <a href="/">Brett Piper</a>
+                    <a href="#about" onClick={() => setNavSelection('About')}>Brett Piper</a>
                 </h1>
                 <p>
                     A portfolio using React.js
