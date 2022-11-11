@@ -16,6 +16,12 @@ function Portfolio() {
             githubRepo: 'https://github.com/crisdege/to-dine-list'
         },
         {
+            title: 'Gear Swap',
+            image: require('../../assets/images/gear-swap.PNG'),
+            deployedUrl: 'https://obscure-sea-74366.herokuapp.com/',
+            githubRepo: 'https://github.com/bpiper91/gear-swap'
+        },
+        {
             title: 'Team Profile Generator',
             image: require('../../assets/images/team.JPG'),
             deployedUrl: 'https://bpiper91.github.io/team-profile-generator/sample/',
@@ -32,12 +38,6 @@ function Portfolio() {
             image: require('../../assets/images/tracker.JPG'),
             deployedUrl: 'https://watch.screencastify.com/v/KH8jG145452zlKpOYZLu',
             githubRepo: 'https://github.com/bpiper91/employee-tracker'
-        },
-        {
-            title: 'E-Commerce Back End',
-            image: require('../../assets/images/e-commerce.PNG'),
-            deployedUrl: 'https://youtu.be/BtaIy6KdVEc',
-            githubRepo: 'https://github.com/bpiper91/e-commerce'
         },
     ];
 
