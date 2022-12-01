@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 function Header(props) {
     // destructure props for clarity
@@ -13,7 +13,7 @@ function Header(props) {
     });
 
     return (
-        <header className="flex-row">
+        <header className="header-row">
             <div className="header-title">
                 <h1>
                     <a href="/">Brett Piper</a>
@@ -22,8 +22,12 @@ function Header(props) {
                     A portfolio using React.js
                 </p>
             </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label className='menu-button-container' htmlFor="menu-toggle">
+                <div className='menu-button'></div>
+            </label>
             <nav>
-                <ul className="flex-row">
+                <ul className="nav-row">
                     <li className={`nav-item ${navSelection === 'Portfolio' && 'navActive'}`}>
                         <a href="#portfolio" onClick={() => setNavSelection('Portfolio')}>Portfolio</a>
                     </li>
