@@ -53,7 +53,7 @@ nav li, footer li {
     color: #f06400;
 }
 
-.header-row, .nav-row {
+.header-row, .nav-row, .portfolio-row {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -164,6 +164,7 @@ h3 {
     background-color: #02535e;
     text-align: center;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .proj a {
@@ -255,6 +256,10 @@ main {
 @media screen and (max-width: 688px) {
     .header-title {
         padding-bottom: 5px;
+    }
+
+    .portfolio-link {
+        margin-bottom: 10px;
     }
 }
 

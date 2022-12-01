@@ -51,11 +51,11 @@ function Portfolio() {
                     <div className='proj' id={`project-${i}`} key={`${i}`}>
                         <h3>{project.title}</h3>
                         <img className='proj-img' src={project.image} alt={project.title} />
-                        <div className='flex-row'>
-                            <span>
+                        <div className='portfolio-row'>
+                            <span className='portfolio-link'>
                                 <a href={project.deployedUrl}>Deployed Application</a>
                             </span>
-                            <span>
+                            <span className='portfolio-link'>
                                 <a href={project.githubRepo}>GitHub Repo</a>
                             </span>
                         </div>
